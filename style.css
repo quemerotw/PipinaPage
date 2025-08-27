@@ -23,6 +23,9 @@ header {
 .logo img{
   height :50px;
 } 
+.nosotros img{
+  height: 30vh;
+}
 .logo p{
   padding-top: 15px;
   padding-left: 20px;
@@ -110,6 +113,11 @@ nav a {   color: #222; text-decoration: none; font-weight: bold; font-size: 1.5v
   color: #222;
   background-image: url(images/navBar.png);
   font-family: 'The Sherloks', serif;
+}
+
+.nosotros h2{
+  padding-top: 20px;
+  font-size: 5vh;
 }
 
 /* Footer */
