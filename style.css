@@ -1,0 +1,151 @@
+@import url('https://db.onlinewebfonts.com/c/7e62ec86368d99f49881363ba6b8edf1?family=The+Sherloks');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; text-shadow: ;}
+
+/* Header */
+header {
+  font-family: 'The Sherloks', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: #222;
+  padding: 15px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-image: url(images/navBar.png);
+  filter: drop-shadow(0px 2px 28px #000000);
+}
+.logo { font-weight: bold; font-size: 2.5vw; display:flex;}
+.logo img{
+  height :50px;
+} 
+.logo p{
+  padding-top: 15px;
+  padding-left: 20px;
+}
+nav ul { display: flex; gap: 20px; list-style: none; }
+nav a {   color: #222; text-decoration: none; font-weight: bold; font-size: 1.5vw; border-radius: 20px; border-width: 2px; border-style: dashed; padding: 10px 10px 10px 10px;}
+.menu-toggle { display: none; cursor: pointer; font-size: 24px; }
+
+#whatsappOverlay{
+  display: flex;
+  font-family: 'The Sherloks', sans-serif;
+  flex-direction: column;
+  color: #111;
+  text-decoration:none;
+  font-size: large;
+  text-align:center;
+  background-color:rgba(47, 202, 0, 0.507);
+  border-radius: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 2vw 1vw 0;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0px 0px 10px 6px #111;
+  width: min-content;
+  backdrop-filter: blur(10px);
+}
+.whatsapp-icon{
+  color: green;
+  font-size: 10vh;
+  filter: drop-shadow(0px 0px 7px #15ff00);
+}
+
+/* Categorías */
+.categoria {
+  font-family: 'The Sherloks', serif;
+  min-height: 100vh;
+  color: white;
+  padding: 120px 20px 60px;
+  text-align: center;
+  text-shadow: 0px 2px 2px #000000;
+}
+
+#splash{
+  margin-top: 50px;
+  background-image: url(images/headerBack.jpeg);
+  background-size: cover;
+  background-position: top;
+  height: 60vh;
+}
+
+.menu-list { margin-top: 20px;}
+.menu-list .item { margin-bottom: 7vw; }
+.menu-list h3 { font-size: 6vw;}
+.menu-list p { font-size: 3vw; margin-top: 10px; }
+.categoria h2 { font-size: 7vw; margin-bottom: 10vw;}
+
+/* Fondos estilo flyers */
+.primordiales { 
+    background: #c2a878;
+    color: #111;
+    background-image: url(images/intocablesback.png);
+    background-size:cover;
+    background-position: bottom;
+}
+.intocables {
+   background: #b30000; 
+   background-image: url(images/intoBackground.jpeg);
+   background-size:cover;
+   background-position: bottom;
+  }     /* rojo */
+.imprescindibles {
+  background: #5b2a86;
+  background-image: url(images/impreBackground.jpeg);
+  background-size:cover;
+  background-position: bottom;
+ } /* violeta */
+
+
+/* Nosotros */
+.nosotros {
+  padding: 80px 20px;
+  background: #eee;
+  text-align: center;
+  color: #222;
+  background-image: url(images/navBar.png);
+  font-family: 'The Sherloks', serif;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  nav ul { gap: 10px; font-size: 14px; }
+  .contacto .telefono { font-size: 28px; }
+}
+@media (max-width: 768px) {
+  nav { 
+    position: fixed; 
+    top: 0; 
+    left: -100%; 
+    width:auto; 
+    height: 100%; 
+    background: #222; 
+    flex-direction: column;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url(images/navBar.png);
+  }
+  nav ul { flex-direction: column; gap: 30px;}
+  nav a{
+    font-size: 4vw;
+  }
+  .logo p{
+    font-size: 30px;
+  }
+  .menu-toggle { display: block; }
+}
