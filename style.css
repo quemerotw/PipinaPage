@@ -17,7 +17,7 @@ header {
   top: 0;
   z-index: 1000;
   background-image: url(images/navBar.png);
-  box-shadow: 0px 2px 28px #000000;
+  box-shadow:  0px 3px 28px #000000;
 }
 .logo { font-weight: bold; font-size: 2.5vw; display:flex;}
 .logo img{
@@ -63,7 +63,7 @@ nav a {   color: #222; text-decoration: none; font-weight: bold; font-size: 1.5v
 /* Categorías */
 .categoria {
   font-family: 'The Sherloks', serif;
-  min-height: 100vh;
+  min-height: 50vh;
   color: white;
   padding: 120px 20px 60px;
   text-align: center;
@@ -75,7 +75,7 @@ nav a {   color: #222; text-decoration: none; font-weight: bold; font-size: 1.5v
   background-image: url(images/headerBack.jpeg);
   background-size: cover;
   background-position: top;
-  height: 60vh;
+  height: 30vh;
 }
 
 .menu-list { margin-top: 20px;}
@@ -86,6 +86,7 @@ nav a {   color: #222; text-decoration: none; font-weight: bold; font-size: 1.5v
 
 /* Fondos estilo flyers */
 .primordiales { 
+    text-shadow: 0px 2px 2px #272727;
     background: #c2a878;
     color: #111;
     background-image: url(images/intocablesback.png);
@@ -149,6 +150,14 @@ footer {
     padding-right: 20px;
     background-image: url(images/navBar.png);
   }
+  .categoria{
+    padding-top: 20%;
+  }
+
+  .categoria p{
+    font-size: medium;
+  }
+
   nav ul { flex-direction: column; gap: 30px;}
   nav a{
     font-size: 4vw;
