@@ -78,7 +78,7 @@ nav a {   color: #222; text-decoration: none; font-weight: bold; font-size: 1.5v
   height: 30vh;
 }
 
-.menu-list { margin-top: 20px;}
+.menu-list { margin-top: 20px; cursor: pointer;}
 .menu-list .item { margin-bottom: 7vw; }
 .menu-list h3 { font-size: 6vw;}
 .menu-list p { font-size: 3vw; margin-top: 10px; }
